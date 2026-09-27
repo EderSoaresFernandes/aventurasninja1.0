@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre o Jogo - Pequeno Ninja</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="Imagens/NinjaJogo.png" alt="Ninja do Jogo" class="icone-logo">
+      <h1>Pequeno Ninja</h1>
+    </div>
+
+    <a href="javascript:mostrarmenu()" class="menu">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="criador.html">Criador</a></li>
+        <li><a href="sobre.html" class="ativo">Sobre o Jogo</a></li>
+        <li><a href="ux.html">UX Persona</a></li>
+        <li><a href="jogar.html">Jogar</a></li>
+        <li><a href="contato.html">Fale Conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Sobre o Jogo</h2>
+      <p class="descricao-sobre">
+        Inspirado no garoto Enrico, de 7 anos, este jogo foi feito para divertir e ensinar que com treino e persistência qualquer desafio pode ser vencido!
+      </p>
+
+      <div class="galeria-fases">
+        <div class="cartao-fase">
+          <img src="Imagens/Dinossauro.png" alt="Inimigo Dinossauro">
+          <h3>Fase 1: Os Dinossauros</h3>
+          <p>Desvie dos dinossauros, pule os cactos e colete todas as jóias douradas para somar muitos pontos!</p>
+        </div>
+
+        <div class="cartao-fase">
+          <img src="Imagens/MeninoCabecadeAbobora.png" alt="Inimigo Cabeça de Abóbora">
+          <h3>Fase 2: O Desafio Saltador</h3>
+          <p>Cuidado com o Menino Cabeça de Abóbora saltador, a água perigosa e os cogumelos venenosos!</p>
+        </div>
+      </div>
+
+      <div class="quadro-incentivo">
+        <h3>Aprender e Tentar de Novo! 💪</h3>
+        <p>No nosso jogo, o fim de jogo é apenas o começo de uma nova tentativa!</p>
+        <div class="imagens-incentivo">
+          <div class="item-incentivo">
+            <img src="Imagens/GameOverNinja.jpg" alt="Tela de Game Over">
+            <p>Treinar faz o mestre!</p>
+          </div>
+          <div class="item-incentivo">
+            <img src="Imagens/NinjaFimPrimeiraFase.jpg" alt="Ninja Vencedor da Fase">
+            <p>Superaste o desafio!</p>
+          </div>
+          <div class="item-incentivo">
+            <img src="Imagens/FimdeJogo.jpg" alt="Vitória Ninja">
+            <p>Super Campeão!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>As Aventuras do Pequeno Ninja<br>Criado para Enrico e seus Amigos • 2026</p>
+  </footer>
+
+   <script>
+    function mostrarmenu() {
+      document.querySelector("header nav").classList.toggle("mostrar");
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Criador - Pequeno Ninja</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="Imagens/NinjaJogo.png" alt="Ninja do Jogo" class="icone-logo">
+      <h1>Pequeno Ninja</h1>
+    </div>
+
+    <a href="javascript:mostrarmenu()" class="menu">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="criador.html" class="ativo">Criador</a></li>
+        <li><a href="sobre.html">Sobre o Jogo</a></li>
+        <li><a href="ux.html">UX Persona</a></li>
+        <li><a href="jogar.html">Jogar</a></li>
+        <li><a href="contato.html">Fale Conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Quem Criou o Jogo? 👨‍👩‍👧‍👦</h2>
+      
+      <div style="margin-bottom: 25px; text-align: center;">
+        <img src="Imagens/EderFamiliaCompleta.jpeg" alt="Eder e sua Família" class="foto-criador">
+        <p style="font-weight: bold; color: #1e3a8a; margin-top: 8px;">Eder, Josiane, Enrico e Clara! ❤️</p>
+      </div>
+
+      <div class="historia-criador">
+        <p class="destaque-criador">
+          "Se eu tivesse que me definir em poucas palavras, diria que sou um entusiasta do planejamento, um apaixonado por resolver problemas e, acima de tudo, um homem de família!"
+        </p>
+
+        <h3>Olá, amiguinhos! Meu nome é Eder Fernandes! 👋</h3>
+        <p class="descricao-sobre">
+          No meu dia a dia de trabalho, sou Administrador e há mais de 20 anos ajudo a loja da minha família no atendimento de seus clientes, marketing, organização de suas contas, estoques e estratégias. Para mim, administrar é como resolver um grande e divertido quebra-cabeça todos os dias!
+        </p>
+        <p class="descricao-sobre">
+          Tenho fé em Deus como Senhor da minha vida e o meu trabalho favorito no mundo é cuidar da minha família: sou o marido da <strong>Josiane</strong> e papai orgulhoso do <strong>Enrico</strong> e da <strong>Clara</strong>. É junto deles que renovo minhas energias para criar coisas incríveis!
+        </p>
+
+        <div class="quadro-incentivo">
+          <h3>Como Nasceu a Ideia do Jogo? 💡</h3>
+          <p class="descricao-sobre">
+            A grande inspiração para este projeto foi meu filho <strong>Enrico, de 7 anos</strong>! Ele é um garoto super curioso, inteligente e que ama ler, desenhar, ir para a escola e brincar com seus amigos.
+          </p>
+          <p class="descricao-sobre">
+            Olhando para ele, pensei: <em>"Por que não criar um jogo divertido e desafiador, onde as crianças aprendam brincando?"</em>
+          </p>
+          <p class="descricao-sobre">
+            Neste jogo, a missão vai além de somar pontos: o objetivo é mostrar que cair faz parte, mas levantar e tentar de novo com <strong>foco, treino e persistência</strong> faz de qualquer criança um verdadeiro campeão!
+          </p>
+          <p style="font-weight: bold; color: #1e3a8a; margin-top: 15px; font-size: 18px;">
+            Desejo que você e sua família se divirtam muito nessa aventura ninja! ⭐
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>As Aventuras do Pequeno Ninja<br>Criado para Enrico e seus Amigos • 2026</p>
+  </footer>
+
+   <script>
+    function mostrarmenu() {
+      document.querySelector("header nav").classList.toggle("mostrar");
+    }
+  </script>
+
+</body>
+</html>

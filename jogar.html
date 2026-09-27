@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogar - Pequeno Ninja</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="Imagens/NinjaJogo.png" alt="Ninja do Jogo" class="icone-logo">
+      <h1>Pequeno Ninja</h1>
+    </div>
+
+    <a href="javascript:mostrarmenu()" class="menu">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="criador.html">Criador</a></li>
+        <li><a href="sobre.html">Sobre o Jogo</a></li>
+        <li><a href="ux.html">UX Persona</a></li>
+        <li><a href="jogar.html" class="ativo">Jogar</a></li>
+        <li><a href="contato.html">Fale Conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Hora de Jogar! 🎮</h2>
+      
+      <div class="caixa-jogo" style="text-align: center; margin: 20px 0; position: relative; display: inline-block; max-width: 100%;">
+        <button id="btnTelaCheia" onclick="entrarTelaCheia()" style="position: absolute; bottom: 12px; right: 12px; background: #112553; color: #fff; border: 2px solid #3b82f6; border-radius: 8px; width: 40px; height: 40px; cursor: pointer; font-size: 18px; display: flex; align-items: center; justify-content: center; transition: all 0.2s ease; z-index: 10;">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+        <iframe 
+         id="iframeJogo"
+         src="jogo/AventurasNinja/index.html" 
+        width="800" 
+        height="450" 
+        style="border: 4px solid #1e3a8a; border-radius: 12px; box-shadow: 0 6px 15px #cbd5e1; max-width: 100%; display: block; margin: 0 auto;"
+        allow="autoplay; fullscreen"
+        allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>As Aventuras do Pequeno Ninja<br>Criado para Enrico e seus Amigos • 2026</p>
+  </footer>
+
+  <script>
+    function mostrarmenu() {
+      document.querySelector("header nav").classList.toggle("mostrar");
+    }
+
+    function entrarTelaCheia() {
+      const iframe = document.getElementById("iframeJogo");
+
+      if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+      } else if (iframe.webkitRequestFullscreen) {
+        iframe.webkitRequestFullscreen();
+      } else if (iframe.msRequestFullscreen) {
+        iframe.msRequestFullscreen();
+      }
+    }
+  </script>
+
+</body>
+</html>

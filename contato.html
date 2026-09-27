@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fale Conosco - Pequeno Ninja</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="Imagens/NinjaJogo.png" alt="Ninja do Jogo" class="icone-logo">
+      <h1>Pequeno Ninja</h1>
+    </div>
+
+    <a href="javascript:mostrarmenu()" class="menu">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="criador.html">Criador</a></li>
+        <li><a href="sobre.html">Sobre o Jogo</a></li>
+        <li><a href="ux.html">UX Persona</a></li>
+        <li><a href="jogar.html">Jogar</a></li>
+        <li><a href="contato.html" class="ativo">Fale Conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container-contato">
+      <h2>Fale Conosco ✉️</h2>
+      <p>Mande sua mensagem para o criador do jogo!</p>
+
+      <form id="formContato" novalidate>
+        
+        <div class="campo">
+          <label for="nome">Nome Completo:</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo..." required>
+        </div>
+
+        <div class="campo">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+        </div>
+
+        <div class="campo">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+        </div>
+
+        <button type="submit">Enviar Mensagem 🚀</button>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>As Aventuras do Pequeno Ninja<br>Criado para Enrico e seus Amigos • 2026</p>
+  </footer>
+
+  <script>
+    function mostrarmenu() {
+      document.querySelector("header nav").classList.toggle("mostrar");
+    }
+
+    document.getElementById("formContato").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const nome = document.getElementById("nome").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const mensagem = document.getElementById("mensagem").value.trim();
+
+      if (!nome || !nome.includes(" ")) {
+        alert("Preencha seu nome completo!");
+        return;
+      }
+
+      if (!email || !email.includes("@") || !email.includes(".")) {
+        alert("Digite um e-mail válido!");
+        return;
+      }
+
+      if (mensagem.length < 3) {
+        alert("Digite sua mensagem!");
+        return;
+      }
+
+      alert("Mensagem enviada com sucesso! Obrigado pelo contato.");
+      document.getElementById("formContato").reset();
+    });
+  </script>
+
+</body>
+</html>

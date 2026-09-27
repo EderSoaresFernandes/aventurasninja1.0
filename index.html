@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>As Aventuras do Pequeno Ninja - Início</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="Imagens/NinjaJogo.png" alt="Ninja do Jogo" class="icone-logo">
+      <h1>Pequeno Ninja</h1>
+    </div>
+
+    <a href="javascript:mostrarmenu()" class="menu">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" class="ativo">Início</a></li>
+        <li><a href="criador.html">Criador</a></li>
+        <li><a href="sobre.html">Sobre o Jogo</a></li>
+        <li><a href="ux.html">UX Persona</a></li>
+        <li><a href="jogar.html">Jogar</a></li>
+        <li><a href="contato.html">Fale Conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <div class="conteudo-banner">
+      <h2>As Aventuras do Pequeno Ninja! ⭐</h2>
+      <p>Prepare sua coragem, salte sobre os obstáculos e colete todas as joias!</p>
+      <a href="jogar.html" class="botao-jogar">JOGAR AGORA! 🚀</a>
+    </div>
+    <div class="imagem-banner">
+      <img src="Imagens/TelaInicialNinja.jpg" alt="Tela Inicial do Jogo">
+    </div>
+  </section>
+
+  <main>
+    <section>
+      <h2>Bem-vindo ao Jogo!</h2>
+      <p class="descricao-sobre">
+        Acompanhe o Pequeno Ninja em uma jornada cheia de desafios, dinossauros e mistérios. Navegue pelo menu acima para conhecer a história ou ir direto para a ação!
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>As Aventuras do Pequeno Ninja<br>Criado para Enrico e seus Amigos • 2026</p>
+  </footer>
+
+  <script>
+    function mostrarmenu() {
+      document.querySelector("header nav").classList.toggle("mostrar");
+    }
+  </script>
+
+</body>
+</html>

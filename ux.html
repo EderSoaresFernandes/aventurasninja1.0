@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UX & Persona - Pequeno Ninja</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="Imagens/NinjaJogo.png" alt="Ninja do Jogo" class="icone-logo">
+      <h1>Pequeno Ninja</h1>
+    </div>
+
+    <a href="javascript:mostrarmenu()" class="menu">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="criador.html">Criador</a></li>
+        <li><a href="sobre.html">Sobre o Jogo</a></li>
+        <li><a href="ux.html" class="ativo">UX Persona</a></li>
+        <li><a href="jogar.html">Jogar</a></li>
+        <li><a href="contato.html">Fale Conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>UX & Documentação de Persona 📐</h2>
+      <p class="descricao-sobre">
+        Esta seção detalha o planejamento de Experiência do Usuário (UX) e as decisões de Design (UI) focadas no público infantil e no aprendizado acadêmico.
+      </p>
+
+      <div class="galeria-fases">
+        <div class="cartao-fase" style="width: 380px; text-align: left;">
+          <h3>👤 A Persona Principal</h3>
+          <p><strong>Nome/Perfil:</strong> Crianças de 6 a 10 anos (representadas pelo Enrico, 7 anos) e seus pais/responsáveis.</p>
+          <p><strong>Características:</strong> Crianças curiosas, em fase escolar, fascinadas por jogos digitais, dinossauros, monstrinhos divertidos e desafios visuais vibrantes.</p>
+          <p><strong>Comportamento:</strong> Buscam diversão rápida, controles simples e recompensas claras a cada etapa vencida.</p>
+        </div>
+
+        <div class="cartao-fase" style="width: 380px; text-align: left;">
+          <h3>🎯 Principais Demandas & Dores</h3>
+          <p><strong>A Dor do Público:</strong> A escassez de jogos digitais infantis simples que unam entretenimento estimulante a mensagens saudáveis de resiliência sem poluição visual ou distrações.</p>
+          <p><strong>A Solução:</strong> Entregar uma interface limpa e intuitiva, ensinando de forma lúdica que a persistência e o treino levam à superação dos desafios do jogo.</p>
+        </div>
+
+        <div class="cartao-fase" style="width: 380px; text-align: left;">
+          <h3>🎨 Decisões de UI & Interface</h3>
+          <p><strong>Cores e Fontes:</strong> Uso do tom azul amigável e contraste com laranja no botão de ação principal, acompanhado de fonte lúdica (`Comic Sans MS`) para facilitar a leitura infantil.</p>
+          <p><strong>Botões & Área de Toque:</strong> Elementos e botões com áreas amplas e cantos arredondados, pensados para fácil clique em celulares e computadores.</p>
+          <p><strong>Direcionamento Claro:</strong> CTA (Call to Action) "JOGAR AGORA" em destaque no topo da página inicial para acesso imediato ao jogo.</p>
+        </div>
+
+        <div class="cartao-fase" style="width: 380px; text-align: left;">
+          <h3>🎓 Visão Acadêmica & Aprendizado</h3>
+          <p><strong>Escopo de Projeto:</strong> O projeto priorizou uma arquitetura semântica limpa (HTML5/CSS3) e responsiva, refinando o layout iterativamente conforme os conceitos teóricos de UX eram consolidados.</p>
+          <p><strong>Evolução Futura:</strong> Testes de usabilidade diretamente com as crianças para validar os tempos de reação e ajustar a dificuldade do jogo nas próximas etapas de desenvolvimento.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>As Aventuras do Pequeno Ninja<br>Criado para Enrico e seus Amigos • 2026</p>
+  </footer>
+
+   <script>
+    function mostrarmenu() {
+      document.querySelector("header nav").classList.toggle("mostrar");
+    }
+  </script>
+
+</body>
+</html>
